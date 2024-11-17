@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="./css/estilo.css">
+</head>
+
+<body>
+
+  <div class="calculadora">
+    <div class="display" id="pantalla" style="font-size: 80px; text-align: end;">0</div>
+    <div class="pantalla">
+      <button class="button" onclick="borrar()"><i class="bi bi-arrow-left"><svg xmlns="http://www.w3.org/2000/svg"
+        width="20" height="20" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+      </svg></i></button>
+      <button class="button" onclick="limpiar()">C</button>
+      <button class="button" onclick="agregarOperacion('/')">/</button>
+      <button class="button" onclick="agregarOperacion('*')">*</button>
+      <button class="button" onclick="agregarNumero('7')">7</button>
+      <button class="button" onclick="agregarNumero('8')">8</button>
+      <button class="button" onclick="agregarNumero('9')">9</button>
+      <button class="button" onclick="agregarOperacion('-')">-</button>
+      <button class="button" onclick="agregarNumero('4')">4</button>
+      <button class="button" onclick="agregarNumero('5')">5</button>
+      <button class="button" onclick="agregarNumero('6')">6</button>
+      <button class="button" onclick="agregarOperacion('+')">+</button>
+      <button class="button" onclick="agregarNumero('1')">1</butto>
+        <button class="button" onclick="agregarNumero('2')">2</button>
+        <button class="button" onclick="agregarNumero('3')">3</button>
+        <button class="button igual" onclick="igual()">=</button>
+        <button class="button cero" onclick="agregarNumero('0')">0</button>
+
+    </div>
+
+  </div>
+
+  <script src="./JavaScript/Calculadora.js"></script>
+</body>
+
+</html>
